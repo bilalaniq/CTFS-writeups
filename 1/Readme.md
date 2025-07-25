@@ -158,6 +158,8 @@ print(p.clean().decode(errors='ignore'))
 
 ```
 
+![final result](./img/final.png)
+
 ---
 
 ## ✅ Conclusion
