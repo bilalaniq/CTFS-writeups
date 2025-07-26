@@ -12,17 +12,15 @@ Each folder has its own `exploit.py` and vulnerable binary (`vuln-32` or `vuln-6
 
 The source code of the file is:
 ```c
-// gcc source.c -o vuln-32 -fno-stack-protector -z noexecstack -m32
-// gcc source.c -o vuln-64 -fno-stack-protector -z noexecstack
+// gcc source.c -o vuln-32 -no-pie -fno-stack-protector -z execstack -m32
+// gcc source.c -o vuln-64 -no-pie -fno-stack-protector -z execstack
 
 #include <stdio.h>
-#include <stdlib.h>
 
 void vuln() {
+    puts("Come get me");
+
     char buffer[20];
-
-    printf("System is at: %lp\n", system);
-
     gets(buffer);
 }
 
