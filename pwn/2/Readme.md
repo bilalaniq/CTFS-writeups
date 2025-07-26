@@ -2,8 +2,8 @@
 
 This repository contains exploit scripts and vulnerable binaries categorized by architecture.
 
-- The ![`32bit/`](./32-bit/) directory includes exploits and binaries for 32-bit systems.
-- The ![`64bit/`](./64-bit/) directory includes exploits and binaries for 64-bit systems.
+- The [`32-bit/`](./32-bit/) directory includes exploits and binaries for 32-bit systems.
+- The [`64-bit/`](./64-bit/) directory includes exploits and binaries for 64-bit systems.
 
 Each folder has its own `exploit.py` and vulnerable binary (`vuln-32` or `vuln-64`).
 
