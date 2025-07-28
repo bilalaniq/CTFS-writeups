@@ -1,17 +1,26 @@
-﻿# Binary Exploitation Challenges
+﻿# 🛠️ Binary Exploitation Challenges
 
-This repository contains binary exploitation challenges.
-Each folder includes binaries and relevant exploit scripts or notes for its respective architecture.
+This repository contains a collection of binary exploitation challenges.  
+Each folder includes binaries, exploit scripts, and notes related to various security concepts and protection bypass techniques.
 
 ---
 
 ## 📁 Folders Overview
 
-| Folder      | Description                                                                                                                                                   |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 👉 [1](./1/) | `64-bit`, `format string`, `buffer overflow`, `NX: Enabled`, `PIE: Enabled`                                                                                   |
-| 👉 [2](./2/) | `64-bit`, `32-bit`, `buffer overflow`, `NX: Enabled`, `ASLR: Enabled`, `system("/bin/sh")`, `libc base calc`, `libc leak`                                     |
-| 👉 [3](./3/) | `32-bit`, `format string`, `canary leak`, `stack canary`, `buffer overflow`, `NX: Enabled`, `ASLR: Enabled`, `ret2win`                                        |
-| 👉 [4](./4/) | `64-bit`, `32-bit`, `buffer overflow`, `NX: Enabled`, `ASLR: Enabled`, `system("/bin/sh")`, `libc base calc`, `libc leak`, `ret2plt ASLR bypass`, `GOT usage` |
-| 👉 [5](./5/) | `32-bit` , `ASLR: Enabled & Disabled`, `format string`, `NX: Enabled`, `system("/bin/sh")`, `libc base calc`, `libc leak`, `ret2plt ASLR bypass`, `GOT usage` |
+| Folder      | Description                                                                                                                                                                   |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 👉 [1](./1/) | `64-bit` · `format string` · `buffer overflow` · `NX: Enabled` · `PIE: Enabled` · Difficulty: `Medium`                                                                        |
+| 👉 [2](./2/) | `64-bit`, `32-bit` · `buffer overflow` · `NX: Enabled` · `ASLR: Enabled` · `system("/bin/sh")` · `libc leak` · `libc base calc` · Difficulty: `Medium`                        |
+| 👉 [3](./3/) | `32-bit` · `format string` · `stack canary` · `canary leak` · `buffer overflow` · `NX: Enabled` · `ASLR: Enabled` · `ret2win` · Difficulty: `Medium`                          |
+| 👉 [4](./4/) | `64-bit`, `32-bit` · `buffer overflow` · `NX: Enabled` · `ASLR: Enabled` · `ret2plt` · `libc leak` · `GOT usage` · Difficulty: `Medium`                                       |
+| 👉 [5](./5/) | `32-bit` · `format string` · `NX: Enabled` · `ASLR: Enabled & Disabled` · `libc leak` · `ret2plt` · `GOT usage` · Difficulty: `Medium`                                        |
+| 👉 [6](./6/) | 🔗 [PIE TIME–picoCTF](https://play.picoctf.org/practice/challenge/490?category=6&page=1) · `64-bit` · `NX: Enabled` · `PIE: Enabled` · `Stack Canary` · Difficulty: `Easy` |
+
+---
+
+## Notes
+
+- Each challenge is isolated in its own folder with relevant architecture, protections, and exploit logic.
+- Protections like NX, PIE, ASLR, and stack canaries are explicitly mentioned.
+- Difficulty levels (`Easy`, `Medium` , `Hard`) are based on the complexity of the exploit steps.
 
