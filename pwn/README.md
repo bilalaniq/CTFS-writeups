@@ -13,4 +13,5 @@ Each folder includes binaries and relevant exploit scripts or notes for its resp
 | 👉 [2](./2/) | `64-bit`, `32-bit`, `buffer overflow`, `NX: Enabled`, `ASLR: Enabled`, `system("/bin/sh")`, `libc base calc`, `libc leak`                                     |
 | 👉 [3](./3/) | `32-bit`, `format string`, `canary leak`, `stack canary`, `buffer overflow`, `NX: Enabled`, `ASLR: Enabled`, `ret2win`                                        |
 | 👉 [4](./4/) | `64-bit`, `32-bit`, `buffer overflow`, `NX: Enabled`, `ASLR: Enabled`, `system("/bin/sh")`, `libc base calc`, `libc leak`, `ret2plt ASLR bypass`, `GOT usage` |
+| 👉 [5](./5/) | `32-bit` , `ASLR: Enabled & Disabled`, `format string`, `NX: Enabled`, `system("/bin/sh")`, `libc base calc`, `libc leak`, `ret2plt ASLR bypass`, `GOT usage` |
 
