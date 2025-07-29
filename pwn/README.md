@@ -16,7 +16,8 @@ Each folder includes binaries, exploit scripts, and notes related to various sec
 | 👉 [5](./5/) | `32-bit` · `format string` · `NX: Enabled` · `ASLR: Enabled & Disabled` · `libc leak` · `ret2plt` · `GOT usage` · Difficulty: `Medium`                                         |
 | 👉 [6](./6/) | 🔗 [PIE_TIME_1–picoCTF](https://play.picoctf.org/practice/challenge/490?category=6&page=1) · `64-bit` · `NX: Enabled` · `PIE: Enabled` · `Stack Canary` · Difficulty: `Easy`    |
 | 👉 [7](./7/) | 🔗 [PIE_TIME_2–picoCTF](https://play.picoctf.org/practice/challenge/491?category=6&page=1) . `64-bit` . `NX: Enabled` . `PIE: Enabled` · `Stack Canary` .  Difficulty: `Medium` |
-| 👉 [8](./8/) | 🔗 [format_string_0–picoCTF](https://play.picoctf.org/practice/challenge/433?category=6&page=1) . `64-bit` . `format string` . Difficulty: `Easy`                             |
+| 👉 [8](./8/) | 🔗 [format_string_0–picoCTF](https://play.picoctf.org/practice/challenge/433?category=6&page=1) . `64-bit` . `format string` . Difficulty: `Easy`                               |
+| 👉 [8](./8/) | 🔗 [buffer_overflow_1–picoCTF](https://play.picoctf.org/practice/challenge/258?category=6&page=3) . `32-bit` . `buffer overflow` . `NX: Enabled` . `ROP` .  Difficulty: `Easy`  |
 
 ---
 
