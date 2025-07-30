@@ -19,6 +19,8 @@ Each folder includes binaries, exploit scripts, and notes related to various sec
 | 👉 [8](./8/)   | 🔗 [format_string_0–picoCTF](https://play.picoctf.org/practice/challenge/433?category=6&page=1) · `64-bit` · `format string` · Difficulty: **🟢 Easy**                                                                                                           |
 | 👉 [9](./9/)   | 🔗 [buffer_overflow_1–picoCTF](https://play.picoctf.org/practice/challenge/258?category=6&page=3) · `32-bit` · `buffer overflow` · `NX: Enabled` · `ROP` · Difficulty: **🟢 Easy**                                                                               |
 | 👉 [10](./10/) | 🔗 [format_string_3–picoCTF](https://play.picoctf.org/practice/challenge/449?category=6&page=1) · `64-bit` · `format string` · `libc leak` · `GOT usage` · `GOT overwrite` · `system("/bin/sh")` · `PIE: Disabled` · `ASLR: Enabled` · Difficulty: **🔵 Medium** |
+| 👉 [11](./11/) | 🔗 [Local_Target–picoCTF](https://play.picoctf.org/practice/challenge/399?category=6&page=2) ·  `64-bit` .  `buffer overflow` .   `Smash the stack` . · Difficulty: **🟢 Easy**                                                                                  |
+
 
 ---
 
