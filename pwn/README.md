@@ -21,8 +21,8 @@ Each folder includes binaries, exploit scripts, and notes related to various sec
 | 👉 [10](./10/) | 🔗 [format_string_3–picoCTF](https://play.picoctf.org/practice/challenge/449?category=6&page=1) · `64-bit` · `format string` · `libc leak` · `GOT usage` · `GOT overwrite` · `system("/bin/sh")` · `PIE: Disabled` · `ASLR: Enabled` · Difficulty: **🔵 Medium** |
 | 👉 [11](./11/) | 🔗 [Local_Target–picoCTF](https://play.picoctf.org/practice/challenge/399?category=6&page=2) ·  `64-bit` .  `buffer overflow` .   `Smash the stack` . Difficulty: **🟢 Easy**                                                                                    |
 | 👉 [12](./12/) | 🔗 [flag_leak–picoCTF](https://play.picoctf.org/practice/challenge/269?category=6&page=2) . `32-bit` . `format string` .  Difficulty: **🟢 Easy**                                                                                                                |
-| 👉 [13](./13/) | 🔗 [RPS–picoCTF](https://play.picoctf.org/practice/challenge/293?category=6&page=2) . `predictable Random Number Generator` . Difficulty: **🟢 Easy**                                                                                                      |
-
+| 👉 [13](./13/) | 🔗 [RPS–picoCTF](https://play.picoctf.org/practice/challenge/293?category=6&page=2) . `predictable Random Number Generator` . Difficulty: **🟢 Easy**                                                                                                            |
+| 👉 [14](./14/) | 🔗 [buffer-overflow-2–picoCTF](https://play.picoctf.org/practice/challenge/259?category=6&page=2&retired=0) . `buffer overflow` . `ret2win` . `no PIE` . Difficulty: **🟢 Easy**                                                                                                         |
 ---
 
 ## Notes
