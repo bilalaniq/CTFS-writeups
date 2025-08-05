@@ -28,7 +28,8 @@ Each folder includes binaries, exploit scripts, and notes related to various sec
 | 👉 [17](./17/) | 🔗 [buffer-overflow-3–picoCTF](https://play.picoctf.org/practice/challenge/260?category=6&page=4&retired=0) .  `buffer overflow` . `32-bit` · `canary-bruteforce` . `ret2win` . Difficulty: **🔴 Hard**                                                                    |
 | 👉 [18](./18/) | 🔗 [handoff–picoCTF](https://play.picoctf.org/practice/challenge/486?category=6&page=3) . `64-bit` . `buffer overflow` . `shellcode injection` . `return-to-shellcode` . `NX disabled` . `custom shellcode` . `ROPgadget` . Difficulty: **🔴 Hard**                        |
 | 👉 [19](./19/) | 🔗 [tic-tac–picoCTF](https://play.picoctf.org/practice/challenge/380?category=6&page=3) . `linux` . `toctou(time-of-check-to-time-of-use)` . `bash` . `symbolic-link` . `suid` . `file-ownership` .   · Difficulty: **🔵 Medium**                                          |
-| 👉 [20](./20/) | 🔗 [function-overwrite–picoCTF](https://play.picoctf.org/practice/challenge/272?category=6&page=4) . `array-out-of-bounds` . `memory-corruption` . · Difficulty: **🔵 Medium**                                                                                             |
+| 👉 [20](./20/) | 🔗 [function-overwrite–picoCTF](https://play.picoctf.org/practice/challenge/272?category=6&page=4) . `array-out-of-bounds` . `memory-corruption` . Difficulty: **🔵 Medium**                                                                                               |
+| 👉 [21](./21/) | 🔗 [seed-sPRiNG–picoCTF](https://play.picoctf.org/practice/challenge/50?category=6&page=6) . `predictable-seed` . `rng` . `prng` . `CWE-338` .  Difficulty: **🔵 Medium**                                                                                                  |
 
 ---
 
