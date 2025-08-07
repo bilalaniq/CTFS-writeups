@@ -140,6 +140,9 @@ p.interactive()
 6. Resolves it using the dynamic symbol resolution process (same as lazy binding).
 7. Updates the GOT (optionally), then **calls `system("/bin/sh")`**.
 
+
+you can learn more about this [here](https://ir0nstone.gitbook.io/notes/binexp/stack/ret2dlresolve)
+
 ---
 
 
