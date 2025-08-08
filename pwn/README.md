@@ -31,6 +31,7 @@ Each folder includes binaries, exploit scripts, and notes related to various sec
 | 👉 [20](./20/) | 🔗 [function-overwrite – picoCTF](https://play.picoctf.org/practice/challenge/272?category=6&page=4) · `array-out-of-bounds` · `memory-corruption` · Difficulty: **🔵 Medium**                                                                                               |
 | 👉 [21](./21/) | 🔗 [seed-sPRiNG – picoCTF](https://play.picoctf.org/practice/challenge/50?category=6&page=6) · `predictable-seed` · `rng` · `prng` · `CWE-338` · Difficulty: **🔵 Medium**                                                                                                   |
 | 👉 [22](./22/) | `32-bit` . `ret2dlresolve` . `ROP` . `bufferoverflow` . `dynamiclinker` . `dlresolve` . `fakeELFstructures` . · Difficulty: **🔵 Medium**                                                                                                                                   |
+| 👉 [23](./23/) | 🔗 [stack-cache – picoCTF](https://play.picoctf.org/practice/challenge/306?category=6&page=4) · `32-bit` . `buffer overflow` . `ROP` . `ret2win` . Difficulty: **🔵 Medium**                                                                                                 |
 
 ---
 
