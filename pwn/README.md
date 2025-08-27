@@ -35,6 +35,8 @@ Each folder includes binaries, exploit scripts, and notes related to various sec
 | 👉 [24](./24/) | `64-bit` . `format string` . `GOT usage` . Author:[basim](https://github.com/Basim-Mehdi) . Difficulty: **🟢 Easy**                                                                                                                                                         |
 | 👉 [25](./25/) | `64-bit` . `buffer overflow` . `ret2win`` . Author:[basim](https://github.com/Basim-Mehdi) . Difficulty: **🟢 Easy**                                                                                                                                                        |
 | 👉 [26](./26/) | 🔗 [Bizz-Fuzz – picoCTF](https://play.picoctf.org/practice/challenge/181?category=6&page=5) · `32-bit` . `buffer overflow` . `ret2win` . `automation` . `rev` . Difficulty: **🔴 Hard**                                                                                      |
+|               |
+| 👉 [27](./27/) | `2-writeups` . `buffer overflow` . `ROP` . `stack pivot` . `ret2win` . `64-bit` . Difficulty: **🔵 Medium**                                                                                                                                                                 |
 
 ---
 
