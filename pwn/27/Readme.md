@@ -2,4 +2,4 @@ because i was learning about [Stack Pivoting](https://ir0nstone.gitbook.io/notes
 
 
 - [pop rsp](./pop_rsp/Readme.md)
-- [pop rsp](./leave/Readme.md)
+- [leave](./leave/Readme.md)
