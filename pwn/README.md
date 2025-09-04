@@ -37,6 +37,7 @@ Each folder includes binaries, exploit scripts, and notes related to various sec
 | 👉 [26](./26/) | 🔗 [Bizz-Fuzz – picoCTF](https://play.picoctf.org/practice/challenge/181?category=6&page=5) · `32-bit` . `buffer overflow` . `ret2win` . `automation` . `rev` . Difficulty: **🔴 Hard**                                                                                      |
 |               |
 | 👉 [27](./27/) | `2-writeups` . `buffer overflow` . `ROP` . `stack pivot` . `ret2win` . `64-bit` . Difficulty: **🔵 Medium**                                                                                                                                                                 |
+| 👉 [28](./28/) | 🔗 [filtered-shellcode – picoCTF](https://play.picoctf.org/practice/challenge/184?category=6&page=5) · `32-bit` . `shellcode` . Difficulty: **🔵 Medium**                                                                                                                    |
 
 ---
 
