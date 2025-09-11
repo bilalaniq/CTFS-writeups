@@ -40,7 +40,7 @@ Each folder includes binaries, exploit scripts, and notes related to various sec
 | 👉 [28](./28/) | 🔗 [filtered-shellcode – picoCTF](https://play.picoctf.org/practice/challenge/184?category=6&page=5) · `32-bit` . `shellcode` . Difficulty: **🔵 Medium**                                                                                                                                                                       |
 | 👉 [29](./29/) | 🔗 [Guessing-Game-2 – picoCTF](https://play.picoctf.org/practice/challenge/89?category=6&page=5) · `32-bit` . `buffer overflow` . `format string` . `GOT usage` . `GOT overwrite` . `system("/bin/sh")` . `canary bypass` . `libc leak` . `guessing` . `BruteForcing` . [libc.rip](https://libc.rip/) . Difficulty: **🔴 Hard** |
 | 👉 [30](./30/) | 🔗 [Guessing-Game-1 – picoCTF](https://play.picoctf.org/practice/challenge/90?category=6&page=3) · `64-bit` . `buffer overflow` . `rop` . `syscall` . `static-binary` . `execve` . `bss-section` . `rop-chain` . `syscall-gadgets` . `ret2syscall` . Difficulty: **🔵 Medium**                                                  |
-
+| 👉 [31](./31/) | `64-bit` . `format-string` . `libc-leak` . `got-overwrite` . `system("/bin/sh")`  . Difficulty: **🔴 Hard**                                                                                                                                                                                                                    |
 
 
 ---
