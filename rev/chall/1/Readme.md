@@ -72,7 +72,7 @@ With unity and skill, flags we deliver,
 The ether’s ours to conquer, picoCTF{70637h3r_f0r3v3r_a5202532}
 ```
 
-`RETURN 0` is the “return address” to go back to [VERSE1] after the subroutine finishes.
+`RETURN 0` is the “return address” to go back to flag.
 
 
 * **Flag extracted:**
