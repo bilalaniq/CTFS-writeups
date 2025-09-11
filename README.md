@@ -12,7 +12,7 @@ This repository contains writeups for Capture The Flag (CTF) challenges that Iâ€
 
 <br>
 
-More categories (web, crypto, rev, etc.) will be added as I complete more challenges.
+More categories (web, crypto, Forensics etc.) will be added as I complete more challenges.
 
 ---
 
