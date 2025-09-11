@@ -7,10 +7,10 @@ Each folder includes binaries, exploit scripts, and notes related to various sec
 
 ## 📁 Folders Overview
 
-| Folder             | Description                                                                                                                                                       |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 👉 [1](./chall/1//) | 🔗 [Flag-Hunters – picoCTF](https://play.picoctf.org/practice/challenge/472?bookmarked=0&category=3&page=1&solved=0) · `Python` . `Logic` . Difficulty: **🟢 Easy** |
-
+| Folder             | Description                                                                                                                                                             |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 👉 [1](./chall/1//) | 🔗 [Flag-Hunters – picoCTF](https://play.picoctf.org/practice/challenge/472?bookmarked=0&category=3&page=1&solved=0) · `Python` . `Logic` . Difficulty: **🟢 Easy**       |
+| 👉 [2](./chall/2//) | 🔗 [Transformation – picoCTF](https://play.picoctf.org/practice/challenge/104?bookmarked=0&category=3&page=1&solved=0) · `Unicode` . `Encoding` . Difficulty: **🟢 Easy** |
 
 
 
