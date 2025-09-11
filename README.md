@@ -7,6 +7,7 @@ This repository contains writeups for Capture The Flag (CTF) challenges that I�
 | Folder           | Description                             |
 | ---------------- | --------------------------------------- |
 | 👉 [pwn/](./pwn/) | Exploitation challenges (binary pwning) |
+| 👉 [rev/](./rev/) | Reverse challenges                      |
 
 
 <br>
