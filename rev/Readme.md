@@ -7,11 +7,12 @@ Each folder includes binaries, exploit scripts, and notes related to various sec
 
 ## 📁 Folders Overview
 
-| Folder             | Description                                                                                                                                                                           |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 👉 [1](./chall/1//) | 🔗 [Flag-Hunters – picoCTF](https://play.picoctf.org/practice/challenge/472?bookmarked=0&category=3&page=1&solved=0) · `Python` . `Logic` . Difficulty: **🟢 Easy**                     |
-| 👉 [2](./chall/2//) | 🔗 [Transformation – picoCTF](https://play.picoctf.org/practice/challenge/104?bookmarked=0&category=3&page=1&solved=0) · `Unicode` . `Encoding` . Difficulty: **🟢 Easy**               |
-| 👉 [3](./chall/3//) | 🔗 [vault-door-training – picoCTF](https://play.picoctf.org/practice/challenge/7?bookmarked=0&category=3&page=1&solved=0) · `Beginner` . `Hardcoded Password` . Difficulty: **🟢 Easy** |
+| Folder             | Description                                                                                                                                                                                                                |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 👉 [1](./chall/1//) | 🔗 [Flag-Hunters – picoCTF](https://play.picoctf.org/practice/challenge/472?bookmarked=0&category=3&page=1&solved=0) · `Python` . `Logic` . Difficulty: **🟢 Easy**                                                          |
+| 👉 [2](./chall/2//) | 🔗 [Transformation – picoCTF](https://play.picoctf.org/practice/challenge/104?bookmarked=0&category=3&page=1&solved=0) · `Unicode` . `Encoding` . Difficulty: **🟢 Easy**                                                    |
+| 👉 [3](./chall/3//) | 🔗 [vault-door-training – picoCTF](https://play.picoctf.org/practice/challenge/7?bookmarked=0&category=3&page=1&solved=0) · `Beginner` . `Hardcoded Password` . Difficulty: **🟢 Easy**                                      |
+| 👉 [4](./chall/4//) | 🔗 [WinAntiDbg0x100 – picoCTF](https://play.picoctf.org/practice/challenge/429?bookmarked=0&category=3&page=1&solved=0) · `x86` . [x32dbg](https://x64dbg.com/) . `patching` . `anti-debugging` . Difficulty:  **🔵 Medium** |
 
 
 ---
