@@ -17,7 +17,7 @@ We were given a program that only run when it is run using a debugger & also wit
 ![nodebuggger](./img/nodebugger.png)
 
 
-so i will use `Ghidra`  & also [debugview]|(https://learn.microsoft.com/en-us/sysinternals/downloads/debugview)
+so i will use `Ghidra`  & also [debugview](https://learn.microsoft.com/en-us/sysinternals/downloads/debugview)
 
 
 first of all we need to unpack the binary 
