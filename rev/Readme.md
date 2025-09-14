@@ -16,7 +16,7 @@ Each folder includes binaries, exploit scripts, and notes related to various sec
 | 👉 [5](./chall/5/) | 🔗 [WinAntiDbg0x200 – picoCTF](https://play.picoctf.org/practice/challenge/430?bookmarked=0&category=3&page=1&solved=0) · x86 · [x32dbg](https://x64dbg.com/) · [Ghidra](https://ghidralite.com/) · Patching · Anti-Debugging · Difficulty: **🔵 Medium**                                                                                       |
 | 👉 [6](./chall/6/) | 🔗 [WinAntiDbg0x300 – picoCTF](https://play.picoctf.org/practice/challenge/431?bookmarked=0&category=3&page=1&solved=0) · GUI · [Ghidra](https://ghidralite.com/) · [UPX](https://github.com/upx/upx) · [DebugView](https://learn.microsoft.com/en-us/sysinternals/downloads/debugview) · Patching · Anti-Debugging · Difficulty: **🔵 Medium** |
 | 👉 [7](./chall/7/) | 🔗 [GDB-baby-step-1 – picoCTF](https://play.picoctf.org/practice/challenge/395?bookmarked=0&category=3&page=2&solved=0) · [GDB](https://www.sourceware.org/gdb/) · Difficulty: **🟢 Easy**                                                                                                                                                      |
-
+| 👉 [8](./chall/8/) | 🔗 [GDB-baby-step-2 – picoCTF](https://play.picoctf.org/practice/challenge/396?bookmarked=0&category=3&page=2&solved=0) · [GDB](https://www.sourceware.org/gdb/) · Difficulty: **🟢 Easy**                                                                                                                                                      |
 ---
 
 ## Notes
