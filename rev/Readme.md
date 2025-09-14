@@ -21,6 +21,7 @@ Each folder includes binaries, exploit scripts, and notes related to various sec
 | 👉 [10](./chall/10/) | 🔗 [GDB-baby-step-4 – picoCTF](https://play.picoctf.org/practice/challenge/398?bookmarked=0&category=3&page=2&solved=0) · [GDB](https://www.sourceware.org/gdb/) · Difficulty: **🟢 Easy**                                                                                                                                                      |
 | 👉 [10](./chall/10/) | 🔗 [GDB-baby-step-4 – picoCTF](https://play.picoctf.org/practice/challenge/398?bookmarked=0&category=3&page=2&solved=0) · [GDB](https://www.sourceware.org/gdb/) · Difficulty: **🟢 Easy**                                                                                                                                                      |
 | 👉 [11](./chall/11/) | 🔗 [packer – picoCTF](https://play.picoctf.org/practice/challenge/421?bookmarked=0&category=3&page=2&solved=0) · [UPX](https://github.com/upx/upx) · [CyberChef](https://gchq.github.io/CyberChef/) · Difficulty: **🟢 Easy**                                                                                                                   |
+| 👉 [12](./chall/12/) | 🔗 [FactCheck – picoCTF](https://play.picoctf.org/practice/challenge/416?bookmarked=0&category=3&page=2&solved=0) ·  · Difficulty: **🟢 Easy**                                                                                                                   |
 ---
 
 ## Notes
