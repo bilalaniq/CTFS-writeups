@@ -21,9 +21,12 @@ Each folder includes binaries, exploit scripts, and notes related to various sec
 
 ## Notes
 
-- Each challenge is isolated in its own folder with relevant architecture, protections, and exploit logic.
-- Protections like NX, PIE, ASLR, and stack canaries are explicitly mentioned.
-- Difficulty levels:
-  - **🟢 Easy** – Basic exploitation with minimal setup  
-  - **🔵 Medium** – Requires libc leaks, GOT/PLT abuse, or bypassing ASLR/Canary  
-  - **🔴 Hard** – Advanced mitigations or complex logic to exploit
+* Each reverse challenge is isolated in its own folder with relevant architecture, protections, and analysis notes.
+* Protections like NX, PIE, ASLR, anti-debugging, and obfuscation are explicitly mentioned.
+* Difficulty levels for reverse challenges:
+
+  * **🟢 Easy** – Basic static analysis, simple logic or decoding
+  * **🔵 Medium** – Requires dynamic analysis, patching, or bypassing anti-debug techniques
+  * **🔴 Hard** – Advanced obfuscation, heavy anti-reversing protections, or complex logic
+
+---
