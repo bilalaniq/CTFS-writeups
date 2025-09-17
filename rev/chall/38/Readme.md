@@ -109,6 +109,9 @@ When decoding/encoding, each character’s index in this string is shifted by 47
 ![convert](./img/convert.png)
 
 
+if you want to learn more about `ROT47` click [here](https://blog.gcwizard.net/manual/en/rotation/06-what-is-rot-47/)
+
+
 
 
 
