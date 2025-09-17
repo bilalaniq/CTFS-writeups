@@ -87,7 +87,7 @@ we can also use [CyberChef](https://gchq.github.io/CyberChef/)
 
 ---
 
->[!NOTE]: 
+>[!NOTE]
 
 ROT47 is a simple **substitution cipher** that shifts each printable ASCII character by 47 positions. It’s like ROT13 (which shifts letters by 13) but works on **all printable characters**, not just letters.
 
