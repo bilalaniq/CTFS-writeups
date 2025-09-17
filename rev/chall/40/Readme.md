@@ -53,7 +53,7 @@ sys.exit(0)
 ---
 
 
-## **Step 1: Understanding the script**
+## **Understanding the script**
 
 The script defines a character table `a`:
 
@@ -103,7 +103,7 @@ arg444 = open('flag.txt.enc', 'rb').read()
 
 ---
 
-## **Step 2: Running the Script**
+## **Running the Script**
 
 1. Enter the password when prompted:
 
@@ -113,13 +113,3 @@ arg444 = open('flag.txt.enc', 'rb').read()
 
 
 
-## **Tags**
-
-* `python`
-* `reverse-engineering`
-* `crypto`
-* `XOR`
-* `obfuscation`
-* `ctf`
-
----
