@@ -44,6 +44,7 @@ Each folder includes binaries, exploit scripts, and notes related to various sec
 | 👉 [32](./chall/32/) | 🔗 [Safe-Opener-2 – picoCTF](https://play.picoctf.org/practice/challenge/375?bookmarked=0&category=3&page=3&solved=0) · `java` · Difficulty: **🟢 Easy**                                                                                                                                                                                             |
 | 👉 [33](./chall/33/) | 🔗 [unpackme – picoCTF](https://play.picoctf.org/practice/challenge/313?bookmarked=0&category=3&page=4&solved=0) · [DIE](https://github.com/horsicq/Detect-It-Easy.git) · [UPX](https://github.com/upx/upx) · Difficulty: **🟢 Easy**                                                                                                                |
 | 👉 [34](./chall/34/) | 🔗 [GDB-Test-Drive – picoCTF](https://play.picoctf.org/practice/challenge/273?bookmarked=0&category=3&page=4&solved=0) · [frida](https://github.com/frida/frida.git) · [GDB](https://www.sourceware.org/gdb/) · Difficulty: **🟢 Easy**                                                                                                              |
+| 👉 [35](./chall/35/) | 🔗 [keygenme-py – picoCTF](https://play.picoctf.org/practice/challenge/121?bookmarked=0&category=3&page=5&solved=0) · `Python` · `SHA-256` · `Hashing` · Difficulty: **🟢 Easy**                                                                                                              |
 
 
 
