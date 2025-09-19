@@ -1,4 +1,4 @@
-# 🛠️ Binary Exploitation Challenges
+# 🛠️ Rev Challenges
 
 This repository contains a collection of reverse engineering and binary exploitation challenges.  
 Each folder includes binaries, exploit scripts, and notes related to various security concepts and protection bypass techniques.
@@ -56,6 +56,7 @@ Each folder includes binaries, exploit scripts, and notes related to various sec
 | 👉 [44](./chall/44/) | 🔗 [ARMssembly-1 – picoCTF](https://play.picoctf.org/practice/challenge/111?category=3&page=5) · `arm` · `aarch64` · [qemu](https://www.qemu.org/) · Difficulty: **🟢 Easy**                                                                                                                                                                         |
 | 👉 [45](./chall/45/) | 🔗 [asm1 – picoCTF](https://play.picoctf.org/practice/challenge/20?category=3&page=5) · Difficulty: **🟢 Easy**                                                                                                                                                                                                                                      |
 | 👉 [46](./chall/46/) | 🔗 [Tap-into-Hash – picoCTF](https://play.picoctf.org/practice/challenge/466?category=3&page=1) · `Python` · `Blockchain` · `XOR` · `SHA-256` · Difficulty: **🟢 Easy**                                                                                                                                                                              |
+| 👉 [47](./chall/47/) | 🔗 [Quantum-Scrambler – picoCTF](https://play.picoctf.org/practice/challenge/466?category=3&page=1) · `Python` · `Obfuscation` · `Scrambled Data` · Difficulty: **🟢 Easy**                                                                                                                                                                              |
 
 ---
 
