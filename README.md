@@ -16,4 +16,4 @@ More categories (web, crypto, Forensics etc.) will be added as I complete more c
 
 ---
 
-Feel free to explore the `pwn/` folder to see detailed solutions and exploit scripts!
+Feel free to explore the `pwn/` , `rev` folder to see detailed solutions and exploit scripts!
