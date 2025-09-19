@@ -1,0 +1,147 @@
+# **Tap into Hash**
+
+## **Description**
+
+This challenge provides a Python script that simulates a simple blockchain, encrypts it, and asks the user to supply a token (user input). The program then inserts this token into the blockchain, encrypts everything, and prints it.
+
+We are tasked with **recovering the original user input** from the encrypted blockchain.
+
+---
+
+## **Understanding the Code**
+
+The code has several key parts:
+
+### Blockchain Structure
+
+```python
+class Block:
+    def __init__(self, index, previous_hash, timestamp, encoded_transactions, nonce):
+        ...
+```
+
+* Each block has an `index`, a hash of the previous block, a timestamp, transactions, and a `nonce`.
+* `calculate_hash()` produces a SHA-256 hash of the block contents.
+* The blockchain starts with a **genesis block**.
+
+---
+
+### Proof of Work
+
+```python
+def proof_of_work(previous_block, encoded_transactions):
+    ...
+    while not is_valid_proof(block):
+        nonce += 1
+```
+
+* A simplified **proof-of-work** is used: it keeps incrementing a nonce until the block hash starts with `"00"`.
+* This is only to simulate mining; it doesn’t affect the encryption of the blockchain.
+
+---
+
+### Blockchain to String
+
+```python
+def blockchain_to_string(blockchain):
+    block_strings = [f"{block.calculate_hash()}" for block in blockchain]
+    return '-'.join(block_strings)
+```
+
+* Converts the blockchain into a single string of hashes, separated by `-`.
+* This is the **plaintext** that will be encrypted.
+
+---
+
+### Encryption Function
+
+```python
+def encrypt(plaintext, inner_txt, key):
+    midpoint = len(plaintext) // 2
+    modified_plaintext = plaintext[:midpoint] + inner_txt + plaintext[midpoint:]
+    ...
+    ciphertext = b''
+    for i in range(0, len(plaintext), 16):
+        ciphertext += xor_bytes(block, key_hash)
+```
+
+* The user token (`inner_txt`) is inserted **in the middle of the plaintext**.
+* The plaintext is padded to multiples of 16 bytes.
+* The key is hashed using SHA-256.
+* Then, the plaintext is XORed block-by-block with the hash of the key.
+
+> Important: XOR encryption is **reversible** if you know the key.
+
+---
+
+## **How Decryption Works**
+
+Since XOR is reversible:
+
+1. Compute the same key hash:
+
+```python
+key_hash = hashlib.sha256(key).digest()
+```
+
+2. XOR each ciphertext block with the key hash to recover the padded plaintext:
+
+```python
+decrypted_block = xor_bytes(cipher_block, key_hash)
+```
+
+3. Remove padding (PKCS#7) to get the original string.
+
+---
+
+### **Python Decryption**
+
+```python
+import time
+import base64
+import hashlib
+import sys
+import secrets
+
+
+key = b"\xb1\xcd\xf2\xaekk\x1e\x1fT\x86a*?\xb7\x84p\x97\x89\xdbg.\x92\x87\xa5\xd4\xe3\xba\xc0\xc4\xeb\xd9)"
+
+Encrypted_Blockchain = b'\xe5\xe6\xebY+W\xb9\xca\xfd\xb6\x06\x81\x8d8\xf0C\xe3\xb1\xbdZ\x7f\x04\xba\x98\xfe\xe6\x00\x82\x8d;\xf1D\xb2\xb4\xeaX,^\xbd\x98\xf8\xe7\x00\xd6\x80<\xf1\x17\xe3\xb5\xe8\x0b%Q\xec\x98\xfa\xe7\t\x84\x8d9\xfa\x1e\xfb\xe7\xebYxU\xee\x9f\xae\xe5\x03\xd3\x89h\xfbD\xb4\xb2\xeaX/_\xba\x98\xfa\xe2P\xd3\x88h\xacD\xb4\xe1\xeeX(Q\xe5\xcd\xff\xe2\x06\x80\x8f=\xff\x16\xb4\xb5\xbfV-R\xea\xce\xa9\xb3T\xd6\xdai\xfe\x10\xe6\xfa\xeb_/\x06\xee\xc9\xad\xe1U\x81\x8d5\xfbE\xef\xef\xb8\\*V\xe4\xc3\xf9\xb6\x08\x81\xddh\xfaD\xe7\xb2\xab\x06~\x08\x9f\xaf\xda\xaeS\xdb\xd7o\xa3y\xe5\x84\x89\x07K\x0e\x8e\x99\xc8\xe4@\xd4\xe0S\x90s\xbc\x9a\xeb\x1d)^\xbf\xb3\xc3\xa4r\xcd\xd5F\x92\\\x94\x9c\x84\x0cxV\xe9\x9d\xaa\xe7\x05\xca\x81:\xaaC\xe1\xe2\xe2\n/P\xed\x9f\xff\xb1\x07\xd6\x8bi\xfa\x10\xe1\xb5\xef\r$^\xe5\xc2\xf8\xb4\x00\x81\x95<\xf8\x17\xb7\xe4\xecV-T\xb8\xc3\xae\xe1T\x86\xdcn\xfb\x16\xb7\xe5\xb8\x0b\x7f^\xba\xce\xac\xb1T\x85\xdcn\xf0\x1f\xb3\xb3\xbaV.W\xbd\xcb\xaa\xecP\x86\x81;\xfb\x14\xef\xb6\xea\x0e/R\xeb\xcd\xab\xec\x03\xd6\x8c!\xf8\x16\xe2\xb2\xe2_\x7fW\xb8\x9d\xf9\xb1\x02\xd6\x8cn\xa9B\xb5\xee\xeb_|V\xbf\xcc\xf8\xec\x03\x87\x815\xaa\x1f\xb2\xb6\xed^)\x02\xed\xc3\xf8\xe7T\x86\x8fm\xf9\x13\xe5\xb2\xef_|R\xe9\xc3\xf8\xe4\x06\x82\xdc4\xca$'
+
+
+def xor_bytes(a, b):
+    return bytes(x ^ y for x, y in zip(a, b))
+
+def decrypt(ciphertext, key):
+    key_hash = hashlib.sha256(key).digest()
+    block_size = 16
+    decrypted = b''
+    
+    for i in range(0, len(ciphertext), block_size):
+        block = ciphertext[i:i + block_size]
+        decrypted += xor_bytes(block, key_hash)
+    
+    # Remove PKCS7 padding
+    padding_len = decrypted[-1]
+    decrypted = decrypted[:-padding_len]
+    
+    return decrypted
+
+# Usage:
+decrypted = decrypt(Encrypted_Blockchain, key)
+print(decrypted)
+
+```
+
+---
+
+## **Extract the Token**
+
+
+![result](./img/result.png)
+
+
+---
+
+
+so the flag will be: `picoCTF{block_3SRhViRbT1qcX_XUjM0r49cH_qCzmJZzBK_ce15f624}`
