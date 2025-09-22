@@ -9,8 +9,8 @@ This repository contains writeups for Capture The Flag (CTF) challenges that I�
 | 👉 [pwn/](./pwn/)             | Exploitation challenges (binary pwning) |
 | 👉 [rev/](./rev/)             | Reverse engineering challenges          |
 | 👉 [web/](./web/)             | Web exploitation write-ups              |
-| 👉 [crypto/](./crypto/)       | Cryptography write-ups                  |
-| 👉 [forensics/](./forensics/) | Forensics write-ups                     |
+| 👉 [crypto/](./Cryptography/) | Cryptography write-ups                  |
+| 👉 [forensics/](./Forensics/) | Forensics write-ups                     |
 
 More categories will be added as I complete more challenges.
 
