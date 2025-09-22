@@ -4,11 +4,11 @@ This repository contains writeups for Capture The Flag (CTF) challenges that I�
 
 ## 📂 Folder Structure
 
-| Folder           | Description                             |
-| ---------------- | --------------------------------------- |
+| Folder            | Description                             |
+| ----------------- | --------------------------------------- |
 | 👉 [pwn/](./pwn/) | Exploitation challenges (binary pwning) |
 | 👉 [rev/](./rev/) | Reverse challenges                      |
-
+| 👉 [web/](./web/) | Web Exploitation                        |
 
 <br>
 
