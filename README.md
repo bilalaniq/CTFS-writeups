@@ -4,16 +4,16 @@ This repository contains writeups for Capture The Flag (CTF) challenges that I�
 
 ## 📂 Folder Structure
 
-| Folder            | Description                             |
-| ----------------- | --------------------------------------- |
-| 👉 [pwn/](./pwn/) | Exploitation challenges (binary pwning) |
-| 👉 [rev/](./rev/) | Reverse challenges                      |
-| 👉 [web/](./web/) | Web Exploitation                        |
+| Folder                        | Description                             |
+| ----------------------------- | --------------------------------------- |
+| 👉 [pwn/](./pwn/)             | Exploitation challenges (binary pwning) |
+| 👉 [rev/](./rev/)             | Reverse engineering challenges          |
+| 👉 [web/](./web/)             | Web exploitation write-ups              |
+| 👉 [crypto/](./crypto/)       | Cryptography write-ups                  |
+| 👉 [forensics/](./forensics/) | Forensics write-ups                     |
 
-<br>
-
-More categories (web, crypto, Forensics etc.) will be added as I complete more challenges.
+More categories will be added as I complete more challenges.
 
 ---
 
-Feel free to explore the `pwn/` , `rev` folder to see detailed solutions and exploit scripts!
+Feel free to explore the above folders to see detailed solutions and exploit scripts!
