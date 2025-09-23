@@ -66,6 +66,8 @@ Each folder includes binaries, exploit scripts, and notes related to various sec
 | 👉 [54](./chall/54/) | 🔗 [Shop – picoCTF](https://play.picoctf.org/practice/challenge/134?category=3&page=4) · `GO-rev` · Difficulty: **🔵 Medium**                                                                                                                                                                                                                        |
 | 👉 [55](./chall/55/) | 🔗 [timer – picoCTF](https://play.picoctf.org/practice/challenge/381?category=3&page=3) · `apk` · [apktool](https://apktool.org/) · [jadx-gui](https://github.com/skylot/jadx.git) · [7-Zip](https://www.7-zip.org/) · Difficulty: **🟢 Easy**                                                                                                       |
 
+| 👉 [56](./chall/56/) | 🔗 [Chronohack – picoCTF](https://play.picoctf.org/practice/challenge/468?category=3&page=1) · [webshell–picoCTF](https://webshell.picoctf.org/) · `token-prediction` · `random-seed` · `network-latency` · `bruteforce` · Difficulty: **🔵 Medium**                                                                                                       |
+
 ---
 
 ## Notes
