@@ -9,8 +9,11 @@ Additional details will be available after launching your challenge instance.
 ### HINTS
 
 >https://www.epochconverter.com/
+
 >https://learn.snyk.io/lesson/insecure-randomness/
+
 >Time tokens generation
+
 >Generate tokens for a range of seed values very close to the target time
 
 
