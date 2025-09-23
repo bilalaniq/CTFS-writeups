@@ -6,9 +6,9 @@ This repository contains a focused collection of **Web Exploitation** challenges
 
 ## 📁 Folders Overview
 
-| Folder             | Description                                 |
-| ------------------ | ------------------------------------------- |
-| 👉 [1](./chall/1/) | 🔗 [ – picoCTF]() · Difficulty: **🟢 Easy** |
+| Folder            | Description                                                                                                                                                                                                    |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 👉 [1](./chall/1/) | 🔗 [SQLiLite – picoCTF]() · `SQL Injection` · [burpsuite](https://www.kali.org/tools/burpsuite/) · `Authentication Bypass` · [curl](https://man7.org/linux/man-pages/man1/curl.1.html) · Difficulty: **🟢 Easy** |
 
 ---
 
