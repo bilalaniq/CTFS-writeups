@@ -6,9 +6,10 @@ This repository contains a focused collection of **Web Exploitation** challenges
 
 ## 📁 Folders Overview
 
-| Folder            | Description                                                                                                                                                                                                    |
-| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 👉 [1](./chall/1/) | 🔗 [SQLiLite – picoCTF]() · `SQL Injection` · [burpsuite](https://www.kali.org/tools/burpsuite/) · `Authentication Bypass` · [curl](https://man7.org/linux/man-pages/man1/curl.1.html) · Difficulty: **🟢 Easy** |
+| Folder            | Description                                                                                                                                                                                                                                                                                                                       |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 👉 [1](./chall/1/) | 🔗 [SQLiLite – picoCTF](https://play.picoctf.org/practice/challenge/304?category=1&page=3) · `SQL Injection` · [burpsuite](https://www.kali.org/tools/burpsuite/) · `Authentication Bypass` · [curl](https://man7.org/linux/man-pages/man1/curl.1.html) · Difficulty: **🟢 Easy**                                                   |
+| 👉 [2](./chall/2/) | 🔗 [SSTI1 – picoCTF](https://play.picoctf.org/practice/challenge/492?category=1&page=1) · [SSTI](https://www.yeswehack.com/learn-bug-bounty/server-side-template-injection-exploitation) · [burpsuite](https://www.kali.org/tools/burpsuite/) · [curl](https://man7.org/linux/man-pages/man1/curl.1.html) · Difficulty: **🟢 Easy** |
 
 ---
 
