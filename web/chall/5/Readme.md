@@ -113,7 +113,7 @@ well here comes the hint
 
 so the ans is vscode 🤷‍♂️
 
-we can also use exteensions such as prettier but i thik new vs code has already preinstalled
+we can also use extensions such as prettier but i think new vs code has already preinstalled
 
 we use curl to directlly copy the code to index.html file
 
