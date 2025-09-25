@@ -42,6 +42,7 @@ Each folder includes binaries, exploit scripts, and notes related to various sec
 | 👉 [30](./chall/30/) | 🔗 [Guessing-Game-1 – picoCTF](https://play.picoctf.org/practice/challenge/90?category=6&page=3) · `64-bit` . `buffer overflow` . `rop` . `syscall` . `static-binary` . `execve` . `bss-section` . `rop-chain` . `syscall-gadgets` . `ret2syscall` . Difficulty: **🔵 Medium**                                                  |
 | 👉 [31](./chall/31/) | `64-bit` . `format-string` . `libc-leak` . `got-overwrite` . `system("/bin/sh")` . Difficulty: **🔴 Hard**                                                                                                                                                                                                                      |
 | 👉 [32](./chall/32/) | `64-bit` . `buffer-overflow` . `GOT-leak` . `rop-exploitation` . `system("/bin/sh")` . [pwninit](https://github.com/io12/pwninit.git) . Difficulty: **🟢 Easy**                                                                                                                                                                 |
+| 👉 [33](./chall/33/) | `32-bit` . `buffer-overflow` . `system("/bin/sh")` . Difficulty: **🟢 Easy**                                                                                                                                                                                                                                                    |
 
 ---
 
