@@ -43,6 +43,7 @@ Each folder includes binaries, exploit scripts, and notes related to various sec
 | 👉 [31](./chall/31/) | `64-bit` . `format-string` . `libc-leak` . `got-overwrite` . `system("/bin/sh")` . Difficulty: **🔴 Hard**                                                                                                                                                                                                                      |
 | 👉 [32](./chall/32/) | `64-bit` . `buffer-overflow` . `GOT-leak` . `rop-exploitation` . `system("/bin/sh")` . [pwninit](https://github.com/io12/pwninit.git) . Difficulty: **🟢 Easy**                                                                                                                                                                 |
 | 👉 [33](./chall/33/) | `32-bit` . `buffer-overflow` . `system("/bin/sh")` . Difficulty: **🟢 Easy**                                                                                                                                                                                                                                                    |
+| 👉 [34](./chall/34/) | `32-bit` . `buffer-overflow` . `system("/bin/sh")` . Difficulty: **🟢 Easy**                                                                                                                                                                                                                                                    |
 
 ---
 
