@@ -46,6 +46,7 @@ Each folder includes binaries, exploit scripts, and notes related to various sec
 | 👉 [34](./chall/34/) | `32-bit` . `buffer-overflow` . `system("/bin/sh")` . Difficulty: **🟢 Easy**                                                                                                                                                                                                                                                   |
 | 👉 [35](./chall/35/) | `32-bit` . `buffer-overflow` . `windows-exe`  . Difficulty: **🟢 Easy**                                                                                                                                                                                                                                                        |
 | 👉 [36](./chall/36/) | `32-bit` . `format string` . Difficulty: **🟢 Easy**                                                                                                                                                                                                                                                                           |
+| 👉 [37](./chall/37/) | `64-bit` . `buffer-overflow` . Difficulty: **🟢 Easy**                                                                                                                                                                                                                                                                         |
 
 
 ---
