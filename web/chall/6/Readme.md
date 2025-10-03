@@ -70,7 +70,6 @@ use this command
 curl -s -X POST http://amiable-citadel.picoctf.net:49900/login   -H "Content-Type: application/json" -H "X-Dev-Access: yes" -d '{"email":"ctf-player@picoctf.org","password":"anything"}' | jq .
 ```
 
-
 ![result](./img/result.png)
 
 ---
