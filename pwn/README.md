@@ -48,6 +48,7 @@ Each folder includes binaries, exploit scripts, and notes related to various sec
 | 👉 [36](./chall/36/) | `32-bit` . `format string` . Difficulty: **🟢 Easy**                                                                                                                                                                                                                                                                           |
 | 👉 [37](./chall/37/) | `64-bit` . `buffer-overflow` . Difficulty: **🟢 Easy**                                                                                                                                                                                                                                                                         |
 | 👉 [38](./chall/38/) | `32-bit` . `format-string` . Difficulty: **🔵 Medium**                                                                                                                                                                                                                                                                         |
+| 👉 [39](./chall/39/) | `64-bit` . `buffer-overflow` . Difficulty: **🟢 Easy**                                                                                                                                                                                                                                                                         |
 
 
 ---
