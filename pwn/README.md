@@ -51,6 +51,7 @@ Each folder includes binaries, exploit scripts, and notes related to various sec
 | 👉 [39](./chall/39/) | `64-bit` . `buffer-overflow` . Difficulty: **🟢 Easy**                                                                                                                                                                                                                                                                         |
 | 👉 [40](./chall/40/) | `race-condition` . `ptrace-anti-debug` . Difficulty: **🟢 Easy**                                                                                                                                                                                                                                                               |
 | 👉 [41](./chall/41/) | `ARM` . `buffer-overflow` . `nx:Disabled` . `shellcode` . Difficulty: **🔵 Medium**                                                                                                                                                                                                                                            |
+| 👉 [42](./chall/42/) | `buffer-overflow` . Difficulty: **🟢 Easy**                                                                                                                                                                                                                                                                                    |
 
 
 ---
