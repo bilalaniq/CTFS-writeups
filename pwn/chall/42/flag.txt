@@ -1,1 +1,1 @@
-solved
+flag{solved}
