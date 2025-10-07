@@ -16,6 +16,7 @@ This repository contains a focused collection of *Web Exploitation* challenges. 
 | 👉 [6](./chall/6/) | [rot13](https://rot13.com/) · Backdoor · Difficulty: *🟢 Easy*                                                                                                                                                                                                                                                                   |
 | 👉 [7](./chall/7/) | [X-Forwarded-For](https://en.wikipedia.org/wiki/X-Forwarded-For) · `rate-limiting` · `ip-spoofing` · `brute-force` · Difficulty: *🔵 Medium*                                                                                                                                                                                     |
 | 👉 [8](./chall/8/) | [.htaccess](https://httpd.apache.org/docs/current/howto/htaccess.html)· `php` · `apache` · `command-injection` ·`file-upload-bypass` · Difficulty: *🔵 Medium*                                                                                                                                                                   |
+| 👉 [9](./chall/9/) | 🔗 [IntroToBurp – picoCTF](https://play.picoctf.org/practice/challenge/419?category=1&page=1) · `Burpsuit` · `secure-coding` · `logic-flaw` · Difficulty: *🟢 Easy*                                                                                                                                                               |
 
 ---
 
