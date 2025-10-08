@@ -18,6 +18,7 @@ This repository contains a focused collection of *Web Exploitation* challenges. 
 | 👉 [8](./chall/8/)   | [.htaccess](https://httpd.apache.org/docs/current/howto/htaccess.html)· `php` · `apache` · `command-injection` ·`file-upload-bypass` · Difficulty: *🔵 Medium*                                                                                                                                                                   |
 | 👉 [9](./chall/9/)   | 🔗 [IntroToBurp – picoCTF](https://play.picoctf.org/practice/challenge/419?category=1&page=1) · `Burpsuit` · `secure-coding` · `logic-flaw` · Difficulty: *🟢 Easy*                                                                                                                                                               |
 | 👉 [10](./chall/10/) | 🔗 [Bookmarklet – picoCTF](https://play.picoctf.org/practice/challenge/406?category=1&page=1) · `obfuscation` · `console` · Difficulty: *🟢 Easy*                                                                                                                                                                                 |
+| 👉 [11](./chall/11/) | 🔗 [Local-Authority – picoCTF](https://play.picoctf.org/practice/challenge/278?category=1&page=1) · `ClientSideVulnerability` · `ExposedSecrets` · `BurpSuite` · Difficulty: *🟢 Easy*                                                                                                                                            |
 
 ---
 
