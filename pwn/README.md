@@ -54,6 +54,7 @@ Each folder includes binaries, exploit scripts, and notes related to various sec
 | 👉 [42](./chall/42/) | `buffer-overflow` . Difficulty: **🟢 Easy**                                                                                                                                                                                                                                                                                     |
 | 👉 [43](./chall/43/) | `64-bit` . `buffer-overflow` . `format-string` . `system("/bin/sh")` . Difficulty: **🔵 Medium**                                                                                                                                                                                                                                |
 | 👉 [44](./chall/44/) | `64-bit` . `buffer-overflow` . `system("/bin/sh")` . Difficulty: **🟢 Easy**                                                                                                                                                                                                                                                    |
+| 👉 [45](./chall/45/) | `64-bit` . `buffer-overflow` . `Shellcode` . `system("/bin/sh")` . Difficulty: **🟢 Easy**                                                                                                                                                                                                                                      |
 
 ---
 
