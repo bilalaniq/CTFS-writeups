@@ -45,8 +45,6 @@ _start:
     syscall
 ```
 
-
-
 # Payload 
 
 
@@ -91,5 +89,7 @@ if __name__ == '__main__':
     main()
 
 ```
+
+> donot forget to disable aslr
 
 ![result](./img/result.png)
